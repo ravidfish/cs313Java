@@ -30,7 +30,7 @@ public class XmlUserStorage implements XmlStorage {
     private List<DiscussionUsers> userList;
     
     public XmlUserStorage() {
-        file = "c:\\webtemp\\user.xml";
+        file = "..\\src\\main\\resources\\user.xml";
         userList = new ArrayList<DiscussionUsers>();
         read();
     }
