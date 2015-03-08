@@ -30,7 +30,8 @@ public class XmlUserStorage implements XmlStorage {
     private List<DiscussionUsers> userList;
     
     public XmlUserStorage() {
-        file = "resources/user.xml";
+        //file = "..\\src\\main\\resources\\user.xml";
+        file = System.getenv("OPENSHIFT_DATA_DIR");
         userList = new ArrayList<DiscussionUsers>();
         read();
     }
