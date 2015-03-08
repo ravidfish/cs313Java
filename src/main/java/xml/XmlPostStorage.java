@@ -30,7 +30,7 @@ public class XmlPostStorage implements XmlStorage {
     private LinkedList<DiscussionPosts> postList;
     
     public XmlPostStorage() {
-        file = "c:\\webtemp\\data.xml";
+        file = "..\\src\\main\\webtemp\\data.xml";
         postList = new LinkedList<DiscussionPosts>();
         read();
     }
