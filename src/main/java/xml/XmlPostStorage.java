@@ -31,7 +31,8 @@ public class XmlPostStorage implements XmlStorage {
     
     public XmlPostStorage() {
         //file = "c:\\webtemp\\data.xml";
-        file = System.getenv("OPENSHIFT_DATA_DIR");
+        String fileTemp = System.getenv("OPENSHIFT_DATA_DIR");
+        file = fileTemp + "/data.xml";
         postList = new LinkedList<DiscussionPosts>();
         read();
     }
